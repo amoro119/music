@@ -17,11 +17,18 @@ a{
 .clear{
     clear:both;
 }
+.pr{
+	position:relative;
+}
+.pa{
+	position:absolute;
+}
 .main{
-	width:1220px;
+	width:1024px;
 	height:768px;
 	margin:0 auto;
 	position:relative;
+	background: url('images/bg.jpg') no-repeat 0 0;	
 }
 .mainframe{
 	position:absolute;
@@ -29,4 +36,41 @@ a{
 	height:349px;
 	top:203px;
 	left:323px;
+}
+.nav_news{
+	display:block;
+	width:112px;
+	height:135px;
+	left:185px;
+	top:218px;
+}
+a.nav_news:hover{
+	background: url('images/nav_news_hover.jpg') no-repeat 0 0;	
+}
+.nav_events{
+	
+}
+.nav_artists{
+	
+}
+.nav_music{
+	
+}
+.nav_education{
+	
+}
+.nav_gallery{
+	
+}
+.nav_credits{
+	
+}
+.nav_contact{
+	
+}
+.nav_eshop{
+	
+}
+.nav_flux{
+	
 }
