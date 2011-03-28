@@ -31,9 +31,9 @@ a{
 	background: url('images/bg.jpg') no-repeat 0 0;	
 }
 .mainframe{
-	width:436px;
-	height:349px;
+
 	margin:7px;
+	border:0;
 }
 .nav_news{
 	display:block;
