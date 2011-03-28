@@ -46,7 +46,14 @@ a.nav_news:hover{
 	background: url('images/nav_news_hover.jpg') no-repeat 0 0;	
 }
 .nav_events{
-	
+		display:block;
+	width:123px;
+	height:116px;
+	left:252px;
+	top:119px;
+}
+a.nav_events:hover{
+	background: url('images/nav_events_hover.jpg') no-repeat 0 0;	
 }
 .nav_artists{
 	
