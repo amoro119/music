@@ -146,3 +146,81 @@ ul.articlelist li{
 #events ul.articlelist li p{
 	margin-top:18px;
 }
+.main2{
+	width:1024px;
+	height:768px;
+	position:absolute;
+	margin:0 auto;
+	z-index:0;
+	left:138px;
+	top:137px;
+}
+.bg2{
+	position:absolute;
+	z-index:1;
+}
+.wrapper{
+	position:relative;
+	width:1024px;
+	margin:0 auto;
+}
+.content{
+	z-index:99;
+	width:256px;
+	height:289px;
+	left:184px;
+	top:271px;
+	color:#fff;
+}
+.content span{
+	color:#E84235;
+}
+.content h1{
+	font-size:12px;
+	font-weight:normal;
+}
+.player{
+	z-index:99;
+	right:135px;
+	top:271px;
+}
+.bg2 .nav_news{
+display:none;
+}
+.bg2 a.nav_news:hover{
+
+}
+.bg2 .nav_events{
+		display:block;
+	width:114px;
+	height:103px;
+	left:146px;
+	top:141px;
+}
+.bg2 a.nav_events:hover{
+	background: url('images/nav_events_hover2.png') no-repeat 0 0;
+}
+.bg2 .nav_artists{
+	
+}
+.bg2 .nav_music{
+	
+}
+.bg2 .nav_education{
+	
+}
+.bg2 .nav_gallery{
+	
+}
+.bg2 .nav_credits{
+	
+}
+.bg2 .nav_contact{
+	
+}
+.bg2 .nav_eshop{
+	
+}
+.bg2 .nav_flux{
+	
+}
