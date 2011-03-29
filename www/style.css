@@ -143,6 +143,9 @@ ul.articlelist li{
 #events ul.articlelist li h1{
 	font-size:12px;
 }
+#events ul.articlelist li h1 a{
+	color:#A0AAAB;
+}
 #events ul.articlelist li p{
 	margin-top:18px;
 }
