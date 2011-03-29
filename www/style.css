@@ -161,6 +161,16 @@ ul.articlelist li{
 .bg2{
 	position:absolute;
 	z-index:1;
+	background: url('images/bg2.png') no-repeat 0 0;
+	width:1024px;
+	height:768px;
+}
+.bg3{
+	position:absolute;
+	z-index:1;
+	background: url('images/bg3.png') no-repeat 0 0;
+	width:1024px;
+	height:768px;
 }
 .wrapper{
 	position:relative;
@@ -187,48 +197,48 @@ ul.articlelist li{
 	right:135px;
 	top:271px;
 }
-.bg2 .nav_news{
+.wrapper .nav_news{
 		display:block;
 	width:116px;
 	height:133px;
 	left:80px;
 	top:215px;
 }
-.bg2 a.nav_news:hover{
+.wrapper a.nav_news:hover{
 background: url('images/nav_news_hover2.png') no-repeat 0 0;
 }
-.bg2 .nav_events{
+.wrapper .nav_events{
 		display:block;
 	width:114px;
 	height:103px;
 	left:146px;
 	top:141px;
 }
-.bg2 a.nav_events:hover{
+.wrapper a.nav_events:hover{
 	background: url('images/nav_events_hover2.png') no-repeat 0 0;
 }
-.bg2 .nav_artists{
+.wrapper .nav_artists{
 	
 }
-.bg2 .nav_music{
+.wrapper .nav_music{
 	
 }
-.bg2 .nav_education{
+.wrapper .nav_education{
 	
 }
-.bg2 .nav_gallery{
+.wrapper .nav_gallery{
 	
 }
-.bg2 .nav_credits{
+.wrapper .nav_credits{
 	
 }
-.bg2 .nav_contact{
+.wrapper .nav_contact{
 	
 }
-.bg2 .nav_eshop{
+.wrapper .nav_eshop{
 	
 }
-.bg2 .nav_flux{
+.wrapper .nav_flux{
 	
 }
 #news .content{
