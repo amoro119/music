@@ -96,7 +96,14 @@ a.nav_education:hover{
 	
 }
 .nav_credits{
-	
+	display:block;
+	width:105px;
+	height:130px;
+	left:750px;
+	top:444px;
+}
+a.nav_credits:hover{
+	background: url('images/nav_credits_hover.png') no-repeat 0 0;	
 }
 .nav_contact{
 			display:block;
@@ -340,4 +347,19 @@ background: url('images/nav_news_hover2.png') no-repeat 0 0;
 #contact .content ul li span{
 	color:#595757;
 	font-weight:bold;
+}
+#credits .fr{
+	width:300px;
+}
+
+#credits ul.articlelist li .fl{
+	background: url('images/img_bg.png') no-repeat 0 0;
+	width:91px;
+	height:90px;
+	margin-top:-6px;
+	margin-left:-11px;
+}
+#credits ul.articlelist li img{
+	border:0;
+	margin:11px 0 0 11px;
 }
