@@ -63,7 +63,14 @@ a.nav_events:hover{
 	background: url('images/nav_events_hover.jpg') no-repeat 0 0;	
 }
 .nav_artists{
-	
+		display:block;
+	width:141px;
+	height:102px;
+	left:360px;
+	top:49px;
+}
+a.nav_artists:hover{
+	background: url('images/nav_artists_hover.png') no-repeat 0 0;	
 }
 .nav_music{
 	
@@ -103,11 +110,13 @@ ul.articlelist li{
 	background: url('images/list_bg.gif') no-repeat left bottom;
 	color:#A0AAAB;
 }
-#news .readmore{
+.readmore{
 	background: url('images/ico_arrow.gif') no-repeat 0 50%;
 	padding-left:8px;
 	color:#A0AAAB;
 	float:right;
+}
+#news .readmore{
 	padding-bottom:2px;
 }
 #news ul.articlelist li p{
@@ -123,14 +132,22 @@ ul.articlelist li{
 #news .archive a{
 	color:#A0AAAB;
 }
-#events ul.articlelist li img{
+ul.articlelist li img{
 	border:3px solid #bbd649;
 }
 #events .fr{
 	width:300px;
 }
+#artists .fr{
+	width:300px;
+}
 #events ul.articlelist{
 	margin-top:3px;
+}
+ul.articlelist li{
+	line-height:18px;
+	min-height:90px;
+	padding-top:17px;
 }
 #events ul.articlelist li{
 	line-height:14px;
@@ -140,10 +157,13 @@ ul.articlelist li{
 #events ul.articlelist li span{
 	color:#E84235;
 }
-#events ul.articlelist li h1{
+#artists ul.articlelist li span{
+	color:#ABCD03;
+}
+ul.articlelist li h1{
 	font-size:12px;
 }
-#events ul.articlelist li h1 a{
+ul.articlelist li h1 a{
 	color:#A0AAAB;
 }
 #events ul.articlelist li p{
