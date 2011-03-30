@@ -119,7 +119,14 @@ a.nav_contact:hover{
 	
 }
 .nav_flux{
-	
+	display:block;
+	width:128px;
+	height:120px;
+	left:312px;
+	top:573px;
+}
+a.nav_flux:hover{
+	background: url('images/nav_flux_hover.png') no-repeat 0 0;	
 }
 .board{
 	background: url('images/border_bg.png') no-repeat 0 0;	
