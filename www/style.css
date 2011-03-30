@@ -83,7 +83,14 @@ a.nav_music:hover{
 	background: url('images/nav_music_hover.png') no-repeat 0 0;	
 }
 .nav_education{
-	
+		display:block;
+	width:125px;
+	height:120px;
+	left:696px;
+	top:112px;
+}
+a.nav_education:hover{
+	background: url('images/nav_education_hover.png') no-repeat 0 0;	
 }
 .nav_gallery{
 	
