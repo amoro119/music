@@ -165,13 +165,11 @@ ul.articlelist li{
 	min-height:48px;
 	padding-top:18px;
 }
-#news .archive{
-	background: url('images/archive_bg.gif') no-repeat 0 50%;
-	padding-left:160px;
-	right:20px;
-	bottom:22px;	
+.pagination{
+	right:10px;
+	bottom:10px;	
 }
-#news .archive a{
+.pagination a{
 	color:#A0AAAB;
 }
 ul.articlelist li img{
@@ -190,12 +188,15 @@ ul.articlelist li img{
 ul.articlelist li{
 	line-height:18px;
 	min-height:90px;
-	padding-top:17px;
+	padding-top:10px;
+}
+#news ul.articlelist li{
+	padding-top:0;	
 }
 #events ul.articlelist li{
 	line-height:14px;
 	min-height:90px;
-	padding-top:17px;
+	padding-top:10px;
 }
 #events ul.articlelist li span{
 	color:#E84235;
@@ -281,28 +282,28 @@ background: url('images/nav_news_hover2.png') no-repeat 0 0;
 	background: url('images/nav_events_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_artists{
-	
+	display:none;
 }
 .wrapper .nav_music{
-	
+	display:none;
 }
 .wrapper .nav_education{
-	
+	display:none;
 }
 .wrapper .nav_gallery{
-	
+	display:none;
 }
 .wrapper .nav_credits{
-	
+	display:none;
 }
 .wrapper .nav_contact{
-	
+	display:none;
 }
 .wrapper .nav_eshop{
-	
+	display:none;
 }
 .wrapper .nav_flux{
-	
+	display:none;
 }
 #news .content{
 	color:#A0AAAB;
@@ -376,7 +377,52 @@ ul.articlelist li .fl{
 }
 #credits ul.articlelist li img{
 	border:0;
+	margin:12px 0 0 12px;
 }
 #eshop .fr{
-	width:300px;
+	width:200px;
+	float:left;
 }
+#eshop .fr span{
+	color:#BE9A0C;
+	padding-top:10px;
+	display:block;
+}
+#eshop .readmore{
+	margin-top:67px;
+}
+div.pagination {
+		padding: 3px;
+		margin: 3px;
+		text-align:center;}
+	
+	div.pagination a {
+		padding: 0px 4px 0px 1px;
+		border-right: 1px solid #A0AAAB;		
+		text-decoration: none; /* no underline */
+	}
+	div.pagination a:hover, div.digg a:active {
+		text-decoration:underline;
+	}
+	div.pagination span.current {
+		padding: 0px 4px 0px 1px;
+		color: #ABCD03;
+		border-right: 1px solid #A0AAAB;	
+	}
+	div.pagination span.disabled {
+		padding: 0px 4px 0px 1px;
+		color: #A0AAAB;
+	}
+	div.pagination .pre{
+		background: url('images/ico_arrow2.gif') no-repeat 0 50%;
+		padding-left:8px!important;	
+	}
+	div.pagination .next{
+		background: url('images/ico_arrow.gif') no-repeat 100% 50%;
+		border:0;
+		padding-right:8px;
+	}
+.last{
+		border:0!important;
+		background:none!important;
+	}
