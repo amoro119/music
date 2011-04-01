@@ -31,18 +31,20 @@
 <meta name="author" content="xtunes.cc" />
 </head>
 	<body id="news">
-				<ul  class="articlelist">
-					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		   <li><p><?php the_title(); ?></p><a class="readmore" href="<?php the_permalink() ?>" target="_top">Read more</a><div class="clear"></div></li>
-		   <?php endwhile; endif; ?>
-		</ul> 
-		<div class="pagination pa">
-			<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+		<div class="wrapper">
+			<div class="bg3">
+				<a class="nav_news pa" href="/news.htm"></a> <a class="nav_events pa" href="/events.htm"></a> <a class="nav_artists pa" href="/artists.htm"></a> <a class="nav_music pa" href="/music.htm"></a> <a class="nav_education pa" href="/education.htm"></a> <a class="nav_gallery pa" href="/gallery.htm"></a> <a class="nav_credits pa" href="/credits.htm"></a> <a class="nav_contact pa" href="/contact.htm"></a> <a class="nav_eshop pa" href="/eshop.htm"></a> <a class="nav_flux pa" href="/flux.htm"></a> <a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/home.htm"></a> 
+			</div>
+			<div class="content pa">
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+					<?php the_content(); ?>
 				<script type="text/javascript" charset="utf-8">
 				$(function(){
-					$('a.page:last').addClass('last');
+					$('img').addClass('img');
 				})
 			</script>
+				<?php endwhile; // end of the loop. ?>
+			</div>
 		</div>
 	</body>
 </html>
