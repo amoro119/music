@@ -397,7 +397,7 @@ div.pagination {
 		text-align:center;}
 	
 	div.pagination a {
-		padding: 0px 4px 0px 1px;
+		padding: 0px 4px 0px 4px;
 		border-right: 1px solid #A0AAAB;		
 		text-decoration: none; /* no underline */
 	}
@@ -405,7 +405,7 @@ div.pagination {
 		text-decoration:underline;
 	}
 	div.pagination span.current {
-		padding: 0px 4px 0px 1px;
+		padding: 0px 4px 0px 4px;
 		color: #ABCD03;
 		border-right: 1px solid #A0AAAB;	
 	}
@@ -413,11 +413,12 @@ div.pagination {
 		padding: 0px 4px 0px 1px;
 		color: #A0AAAB;
 	}
-	div.pagination .pre{
+	div.pagination .pre,div.pagination .previouspostslink{
 		background: url('images/ico_arrow2.gif') no-repeat 0 50%;
 		padding-left:8px!important;	
+		border:0;
 	}
-	div.pagination .next{
+	div.pagination .next,div.pagination .nextpostslink{
 		background: url('images/ico_arrow.gif') no-repeat 100% 50%;
 		border:0;
 		padding-right:8px;

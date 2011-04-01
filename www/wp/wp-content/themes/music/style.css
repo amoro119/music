@@ -1,0 +1,442 @@
+/*
+Theme Name: music
+Theme URI:
+Description: 
+Author:
+Version: 1.2
+License: 
+License URI: 
+Tags: 
+*/
+
+
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+*{
+  margin:0px;
+  padding:0px;
+  border:0px;
+}
+body{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size:12px;
+    background: #fff; 
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+.clear{
+    clear:both;
+}
+.pr{
+	position:relative;
+}
+.pa{
+	position:absolute;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.main{
+	width:1024px;
+	height:768px;
+	margin:0 auto;
+	position:relative;
+	background: url('images/bg.jpg') no-repeat 0 0;	
+}
+.mainframe{
+	width:436px;
+	height:349px;
+	margin:9px 11px;
+	border:0;
+}
+.nav_news{
+	display:block;
+	width:112px;
+	height:135px;
+	left:185px;
+	top:218px;
+}
+a.nav_news:hover{
+	background: url('images/nav_news_hover.jpg') no-repeat 0 0;	
+}
+.nav_events{
+		display:block;
+	width:123px;
+	height:116px;
+	left:252px;
+	top:119px;
+}
+a.nav_events:hover{
+	background: url('images/nav_events_hover.jpg') no-repeat 0 0;	
+}
+.nav_artists{
+		display:block;
+	width:141px;
+	height:102px;
+	left:360px;
+	top:49px;
+}
+a.nav_artists:hover{
+	background: url('images/nav_artists_hover.png') no-repeat 0 0;	
+}
+.nav_music{
+	display:block;
+	width:137px;
+	height:93px;
+	left:560px;
+	top:49px;
+}
+a.nav_music:hover{
+	background: url('images/nav_music_hover.png') no-repeat 0 0;	
+}
+.nav_education{
+		display:block;
+	width:125px;
+	height:120px;
+	left:696px;
+	top:112px;
+}
+a.nav_education:hover{
+	background: url('images/nav_education_hover.png') no-repeat 0 0;	
+}
+.nav_gallery{
+	
+}
+.nav_credits{
+	display:block;
+	width:105px;
+	height:130px;
+	left:750px;
+	top:444px;
+}
+a.nav_credits:hover{
+	background: url('images/nav_credits_hover.png') no-repeat 0 0;	
+}
+.nav_contact{
+			display:block;
+	width:138px;
+	height:106px;
+	left:633px;
+	top:573px;
+}
+a.nav_contact:hover{
+	background: url('images/nav_contact_hover.png') no-repeat 0 0;	
+}
+.nav_eshop{
+		display:block;
+	width:106px;
+	height:125px;
+	left:230px;
+	top:466px;
+}
+a.nav_eshop:hover{
+	background: url('images/nav_eshop_hover.png') no-repeat 0 0;	
+}
+.nav_flux{
+	display:block;
+	width:128px;
+	height:120px;
+	left:312px;
+	top:573px;
+}
+a.nav_flux:hover{
+	background: url('images/nav_flux_hover.png') no-repeat 0 0;	
+}
+.board{
+	background: url('images/border_bg.png') no-repeat 0 0;	
+    position:absolute;
+	width:458px;
+	height:367px;
+	top:193px;
+	left:311px;
+}
+ul.articlelist {
+	width:396px;
+	margin: 5px 0 0 23px;
+	line-height:18px;
+}
+ul.articlelist li{
+	background: url('images/list_bg.gif') no-repeat left bottom;
+	color:#A0AAAB;
+}
+.readmore{
+	background: url('images/ico_arrow.gif') no-repeat 0 50%;
+	padding-left:8px;
+	color:#A0AAAB;
+	float:right;
+}
+#news .readmore{
+	padding-bottom:2px;
+}
+#news ul.articlelist li p{
+	min-height:48px;
+	padding-top:18px;
+}
+.pagination{
+	right:10px;
+	bottom:10px;	
+}
+.pagination a{
+	color:#A0AAAB;
+}
+ul.articlelist li img{
+	border:3px solid #bbd649;
+		margin:11px 0 0 9px;
+}
+#events .fr{
+	width:300px;
+}
+#artists .fr{
+	width:300px;
+}
+#events ul.articlelist{
+	margin-top:3px;
+}
+ul.articlelist li{
+	line-height:18px;
+	min-height:90px;
+	padding-top:10px;
+}
+#news ul.articlelist li{
+	padding-top:0;	
+}
+#events ul.articlelist li{
+	line-height:14px;
+	min-height:90px;
+	padding-top:10px;
+}
+#events ul.articlelist li span{
+	color:#E84235;
+}
+#artists ul.articlelist li span{
+	color:#ABCD03;
+}
+ul.articlelist li h1{
+	font-size:12px;
+}
+ul.articlelist li h1 a{
+	color:#A0AAAB;
+}
+#events ul.articlelist li p{
+	margin-top:18px;
+}
+.main2{
+	width:1024px;
+	height:768px;
+	position:absolute;
+	margin:0 auto;
+	z-index:0;
+	left:138px;
+	top:137px;
+}
+.bg2{
+	position:absolute;
+	z-index:1;
+	background: url('images/bg2.png') no-repeat 0 0;
+	width:1024px;
+	height:768px;
+}
+.bg3{
+	position:absolute;
+	z-index:1;
+	background: url('images/bg3.png') no-repeat 0 0;
+	width:1024px;
+	height:768px;
+}
+.wrapper{
+	position:relative;
+	width:1024px;
+	margin:0 auto;
+}
+.content{
+	z-index:99;
+	width:256px;
+	height:289px;
+	left:184px;
+	top:271px;
+	color:#fff;
+}
+.content span{
+	color:#E84235;
+}
+.content h1{
+	font-size:12px;
+	font-weight:normal;
+}
+.player{
+	z-index:99;
+	right:135px;
+	top:271px;
+}
+.wrapper .nav_news{
+		display:block;
+	width:116px;
+	height:133px;
+	left:80px;
+	top:215px;
+}
+.wrapper a.nav_news:hover{
+background: url('images/nav_news_hover2.png') no-repeat 0 0;
+}
+.wrapper .nav_events{
+		display:block;
+	width:114px;
+	height:103px;
+	left:146px;
+	top:141px;
+}
+.wrapper a.nav_events:hover{
+	background: url('images/nav_events_hover2.png') no-repeat 0 0;
+}
+.wrapper .nav_artists{
+	display:none;
+}
+.wrapper .nav_music{
+	display:none;
+}
+.wrapper .nav_education{
+	display:none;
+}
+.wrapper .nav_gallery{
+	display:none;
+}
+.wrapper .nav_credits{
+	display:none;
+}
+.wrapper .nav_contact{
+	display:none;
+}
+.wrapper .nav_eshop{
+	display:none;
+}
+.wrapper .nav_flux{
+	display:none;
+}
+#news .content{
+	color:#A0AAAB;
+	width:522px;
+	height:auto;
+		left:279px;
+	top:231px;
+	text-align: justify;
+	line-height:16px;
+}
+#news .content ul{
+	margin-top:35px;
+}
+#news .content ul li{
+	float:left;
+	padding-left:16px;
+}
+#news .content ul li img{
+	border:4px solid #b4d232;
+}
+#music .content{
+	margin:44px 0 0 56px;
+	width:auto;
+	height:auto;
+}
+#music p{
+	color:#595757;
+	line-height:18px;
+	width:320px;
+	text-align:justify;
+}
+#music p span{
+	color:#E9A51D;
+	font-size:14px;
+}
+#music .content img{
+	margin:34px 0 0 280px;
+}
+#contact .content{
+	margin:28px 0 0 61px;
+	width:auto;
+	height:auto;
+}
+#contact .content h1{
+	color:#BE9A0C;
+	font-size:14px;
+	font-weight:bold;
+	margin:11px 0 0 17px;
+}
+#contact .content ul{
+	margin:0 0 0 17px;
+}
+#contact .content ul li {
+	color:#595757;
+	line-height:18px;
+}
+#contact .content ul li span{
+	color:#595757;
+	font-weight:bold;
+}
+#credits .fr{
+	width:300px;
+}
+
+ul.articlelist li .fl{
+	background: url('images/img_bg.png') no-repeat 0 0;
+	width:101px;
+	height:95px;
+	margin-top:-6px;
+	margin-left:-11px;
+}
+#credits ul.articlelist li img{
+	border:0;
+	margin:12px 0 0 12px;
+}
+#eshop .fr{
+	width:200px;
+	float:left;
+}
+#eshop .fr span{
+	color:#BE9A0C;
+	padding-top:10px;
+	display:block;
+}
+#eshop .readmore{
+	margin-top:67px;
+}
+div.pagination {
+		padding: 3px;
+		margin: 3px;
+		text-align:center;}
+	
+	div.pagination a {
+		padding: 0px 4px 0px 1px;
+		border-right: 1px solid #A0AAAB;		
+		text-decoration: none; /* no underline */
+	}
+	div.pagination a:hover, div.digg a:active {
+		text-decoration:underline;
+	}
+	div.pagination span.current {
+		padding: 0px 4px 0px 1px;
+		color: #ABCD03;
+		border-right: 1px solid #A0AAAB;	
+	}
+	div.pagination span.disabled {
+		padding: 0px 4px 0px 1px;
+		color: #A0AAAB;
+	}
+	div.pagination .pre{
+		background: url('images/ico_arrow2.gif') no-repeat 0 50%;
+		padding-left:8px!important;	
+	}
+	div.pagination .next{
+		background: url('images/ico_arrow.gif') no-repeat 100% 50%;
+		border:0;
+		padding-right:8px;
+	}
+.last{
+		border:0!important;
+		background:none!important;
+	}
