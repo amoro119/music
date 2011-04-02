@@ -93,7 +93,14 @@ a.nav_education:hover{
 	background: url('images/nav_education_hover.png') no-repeat 0 0;	
 }
 .nav_gallery{
-	
+	display:block;
+	width:109px;
+	height:142px;
+	left:772px;
+	top:220px;
+}
+a.nav_gallery:hover{
+	background: url('images/nav_gallery_hover.png') no-repeat 0 0;	
 }
 .nav_credits{
 	display:block;
@@ -384,7 +391,7 @@ ul.articlelist li .fl{
 	padding-top:10px;
 	display:block;
 }
-#eshop .readmore{
+#eshop .readmore,{
 	margin-top:67px;
 }
 div.pagination {
