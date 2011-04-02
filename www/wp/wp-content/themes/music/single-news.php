@@ -28,6 +28,10 @@
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
 <script src="/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="/jquery.jscrollpane.min.js"></script>
 <meta name="author" content="xtunes.cc" />
 </head>
 	<body id="news">
@@ -38,13 +42,52 @@
 			<div class="content pa">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
-				<script type="text/javascript" charset="utf-8">
-				$(function(){
-					$('img').addClass('img');
-				})
-			</script>
 				<?php endwhile; // end of the loop. ?>
 			</div>
+				<div id="content-images" class="horizontal-only">
+					<!-- 抽取内容中的图片到这里 -->
+				</div>
+				<a id="content-left-arrow" href="#">
+					<img src="/images/left-arrow.gif" >
+				</a>
+				<a id="content-right-arrow" href="#">
+					<img src="/images/right-arrow.gif" >
+				</a>
+				<script type="text/javascript" charset="utf-8">
+				$(function(){
+					$('.content a').each(function(){
+						var href=$(this).attr('href');
+					    if ( href.match(/.*\.(jpg|jpeg|png|gif)$/) ) {
+					      $('#content-images').append($('<img>').attr('src',href));
+					      $(this).remove();
+					    };
+				    })
+				 $('.content').jScrollPane();
+				 		$('#content-left-arrow').hide();
+				 		$('#content-right-arrow').hide();
+					var pane=$('#content-images');
+					var clonedElem = pane.clone(false, false).css('position', 'absolute').css('width','auto');
+					var tempWrapper = $('<div style="width:1px; position: relative;" />').append(clonedElem);
+					
+					$('body').append(tempWrapper);
+				 	var contentWidth = Math.max(pane.outerWidth(), clonedElem.outerWidth());
+				 	tempWrapper.remove();
+				 	if(contentWidth>pane.width()){
+				 		$('#content-left-arrow').show();
+				 		$('#content-right-arrow').show();
+				 		$('#content-left-arrow').click(function(e){
+				 			pane.scrollLeft(pane.scrollLeft()-50)
+				 			return false;
+				 		});
+				 		
+				 		$('#content-right-arrow').click(function(e){
+				 			pane.scrollLeft(pane.scrollLeft()+50)
+				 			return false;
+				 		});
+				 	}
+				});
+			</script>
+	
 		</div>
 	</body>
 </html>
