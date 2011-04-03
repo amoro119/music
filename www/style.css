@@ -582,4 +582,28 @@ div.pagination {
 {
 	margin: 0 -3px 0 0;
 }
-
+#artists .content,#artists .player{
+	top:286px;
+}
+.info{
+	position:absolute;
+	top:196px;
+	left:208px;
+	z-index:99;
+	color:#fff;
+	width:226px;
+		background: url('images/line.png') no-repeat left bottom;
+	padding-bottom:5px;
+}
+.info .artist{
+	width:137px;
+	float:left;
+	padding-top:26px;
+}
+.info .type{
+	color:#ABCD03;
+}
+.info .photo{float:right;}
+.info .photo img{
+	border:2px solid #ABCD03;
+}
