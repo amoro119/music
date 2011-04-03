@@ -583,3 +583,15 @@ div.pagination {
 	margin: 0 -3px 0 0;
 }
 
+#gallery .nivo-controlNav
+{
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+#gallery #content-left-arrow,#gallery #content-right-arrow{
+
+}
+#gallery #content-right-arrow{
+
+}
