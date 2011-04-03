@@ -6,5 +6,7 @@
  include(TEMPLATEPATH . '/single-artists.php');}
  elseif( in_category( 'eshop' ) ) {
  include(TEMPLATEPATH . '/single-eshop.php');}
+  elseif( in_category( 'credits' ) ) {
+ include(TEMPLATEPATH . '/single-credits.php');}
  else{include(TEMPLATEPATH . '/single-other.php');}
 ?>

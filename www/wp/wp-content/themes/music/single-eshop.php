@@ -54,7 +54,7 @@
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<div class="info">
 		<div class="photo"><?php the_post_thumbnail('thumbnail');?></div>
-		<p class="name"><?php the_title(); ?></p>
+		<p class=""><?php the_title(); ?></p>
 		<p class="catalogy"><?php echo get_post_meta($post->ID,'catalogy',true) ?></p>
 	</div>
 	<div class="content pa">

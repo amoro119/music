@@ -291,28 +291,84 @@ background: url('images/nav_news_hover2.png') no-repeat 0 0;
 	background: url('images/nav_events_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_artists{
-	display:none;
+			display:block;
+	width:138px;
+	height:96px;
+	left:241px;
+	top:80px;
+}
+.wrapper a.nav_artists:hover{
+	background: url('images/nav_artists_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_music{
-	display:none;
+				display:block;
+	width:131px;
+	height:92px;
+	left:710px;
+	top:88px;
+}
+.wrapper a.nav_music:hover{
+	background: url('images/nav_music_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_education{
-	display:none;
+					display:block;
+	width:113px;
+	height:121px;
+	left:827px;
+	top:151px;
+}
+.wrapper a.nav_education:hover{
+	background: url('images/nav_education_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_gallery{
-	display:none;
+	display:block;
+	width:87px;
+	height:132px;
+	left:895px;
+	top:255px;
+}
+.wrapper a.nav_gallery:hover{
+	background: url('images/nav_gallery_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_credits{
-	display:none;
+		display:block;
+	width:113px;
+	height:128px;
+	left:843px;
+	top:497px;
+}
+.wrapper a.nav_credits:hover{
+	background: url('images/nav_credits_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_contact{
-	display:none;
+			display:block;
+	width:119px;
+	height:98px;
+	left:761px;
+	top:602px;
+}
+.wrapper a.nav_contact:hover{
+	background: url('images/nav_contact_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_eshop{
-	display:none;
+			display:block;
+	width:106px;
+	height:128px;
+	left:108px;
+	top:496px;
+}
+.wrapper a.nav_eshop:hover{
+	background: url('images/nav_eshop_hover2.png') no-repeat 0 0;
 }
 .wrapper .nav_flux{
-	display:none;
+				display:block;
+	width:132px;
+	height:101px;
+	left:215px;
+	top:621px;
+}
+.wrapper a.nav_flux:hover{
+	background: url('images/nav_flux_hover2.png') no-repeat 0 0;
 }
 #news .content{
 	color:#A0AAAB;

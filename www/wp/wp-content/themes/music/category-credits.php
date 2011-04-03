@@ -39,7 +39,7 @@
 				</div>
 				<div class="fr">
 					<h1><a href="<?php the_permalink() ?>" target="_top"><?php the_title(); ?></a></h1>
-					<p><?php the_excerpt(); ?> </p>
+					<p><?php echo get_post_meta($post->ID,'name',true) ?></p>
 				</div>
 													<a class="readmore" href="<?php the_permalink() ?>" target="_top">Read more</a>
 				<div class="clear"></div>
