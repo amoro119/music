@@ -39,7 +39,8 @@
 				</div>
 				<div class="fr">
 					<h1><a href="<?php the_permalink() ?>" target="_top"><?php the_title(); ?></a></h1>
-					<p><?php the_excerpt(); ?> </p>
+					<p><?php echo get_post_meta($post->ID,'catalogy',true) ?></p>
+					<p><?php echo get_post_meta($post->ID,'program',true) ?></p>
 					<span><?php
 $posttags = get_the_tags();
 if ($posttags) {

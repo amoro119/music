@@ -49,12 +49,13 @@
 	<a class="nav_flux pa" href="/flux.htm">
 		
 	</a>
-	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="home.htm"></a>
+	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/home.htm"></a>
 	</div>
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<div class="info">
 		<div class="photo"><?php the_post_thumbnail('thumbnail');?></div>
 		<p class="name"><?php the_title(); ?></p>
+		<p class="catalogy"><?php echo get_post_meta($post->ID,'catalogy',true) ?></p>
 	</div>
 	<div class="content pa">
 		<div class="body">

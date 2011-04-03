@@ -70,7 +70,7 @@
 	<a class="nav_flux pa" href="/flux.htm">
 		
 	</a>
-	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="home.htm"></a>
+	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/home.htm"></a>
 	</div>
 	<div class="content pa">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
