@@ -638,47 +638,16 @@ div.pagination {
 {
 	margin: 0 -3px 0 0;
 }
-#artists .content,#artists .player{
-	top:286px;
+
+#gallery .nivo-controlNav
+{
+	overflow:hidden;
+	white-space:nowrap;
 }
-#artists .info{
-	position:absolute;
-	top:196px;
-	left:208px;
-	z-index:99;
-	color:#fff;
-	width:226px;
-		background: url('images/line.png') no-repeat left bottom;
-	padding-bottom:5px;
+
+#gallery #content-left-arrow,#gallery #content-right-arrow{
+
 }
-#artists .info .artist{
-	width:137px;
-	float:left;
-	padding-top:26px;
-}
-#artists .info .type{
-	color:#ABCD03;
-}
-#artists .info .photo{float:right;}
-#artists .info .photo img{
-	border:2px solid #ABCD03;
-}
-#eshop .info{
-	position:absolute;
-	top:276px;
-	left:199px;
-	z-index:99;
-	color:#fff;
-	background: url('images/line2.png') no-repeat right top;
-	height:271px;
-	width:92px;
-}
-#eshop .info .name{
-	margin-top:10px;
-}
-#eshop .content{
-	left:315px;
-}
-#eshop .info img{
-	border:2px solid #ABCD03;
+#gallery #content-right-arrow{
+
 }

@@ -31,7 +31,6 @@
 
 	?></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
 <script src="/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
@@ -48,6 +47,29 @@
 	 */
 	wp_head();
 ?>
+<link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
+					<script type="text/javascript" charset="utf-8">
+				var galleryLoaded=function(){
+					$('#slider').after($('<a id="content-left-arrow" href="#"><img src="/images/left-arrow.gif" ></a><a id="content-right-arrow" href="#"><img src="/images/right-arrow.gif" ></a>'));
+				 	$('#content-left-arrow').hide();
+				 	$('#content-right-arrow').hide();
+					var pane=$('.nivo-controlNav');
+					$('#slider').wrap($('<div class="gallery_bg"></div>'));
+					var contentWidth=pane.children().size()*72;
+				 	if(contentWidth>pane.width()){
+				 		$('#content-left-arrow').show();
+				 		$('#content-right-arrow').show();
+				 		$('#content-left-arrow').click(function(e){
+				 			pane.scrollLeft(pane.scrollLeft()-50)
+				 			return false;
+				 		});
+				 		$('#content-right-arrow').click(function(e){
+				 			pane.scrollLeft(pane.scrollLeft()+50)
+				 			return false;
+				 		});
+				 	}
+				}
+			</script>
 </head>
 <body id="gallery">
 		<div class="content">
