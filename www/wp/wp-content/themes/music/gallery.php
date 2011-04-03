@@ -50,11 +50,11 @@
 <link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
 					<script type="text/javascript" charset="utf-8">
 				var galleryLoaded=function(){
-					$('#slider').after($('<a id="content-left-arrow" href="#"><img src="/images/left-arrow.gif" ></a><a id="content-right-arrow" href="#"><img src="/images/right-arrow.gif" ></a>'));
+					$('#slider').after($('<a id="content-left-arrow" href="#"><img src="/images/ico_arrow2.gif" ></a><a id="content-right-arrow" href="#"><img src="/images/ico_arrow.gif" ></a>'));
 				 	$('#content-left-arrow').hide();
 				 	$('#content-right-arrow').hide();
 					var pane=$('.nivo-controlNav');
-					$('#slider').wrap($('<div class="gallery_bg"></div>'));
+					$('#slider').before($('<div class="gallery_bg"></div>'));
 					var contentWidth=pane.children().size()*72;
 				 	if(contentWidth>pane.width()){
 				 		$('#content-left-arrow').show();

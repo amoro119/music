@@ -645,9 +645,26 @@ div.pagination {
 	white-space:nowrap;
 }
 
-#gallery #content-left-arrow,#gallery #content-right-arrow{
-
+#gallery #content-left-arrow{
+	position:absolute;
+	left:0px;
+	top:311px;
 }
 #gallery #content-right-arrow{
-
+	position:absolute;
+	left:425px;
+	top:311px;
+}
+.gallery_bg{
+	background: url('images/gallery_bg.png') no-repeat 0 0;
+	width:356px;
+	height:262px;
+	position:absolute;
+	left:40px;
+	top:14px;
+}
+.nivo-control{
+	background: url('images/thumbnails_bg.png') no-repeat 0 0;
+	width:71px;
+	height:67px;
 }

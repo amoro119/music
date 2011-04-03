@@ -172,11 +172,11 @@ a.nivo-prevNav {
   line-height: 1px;
   left: -50px;
   top:260px;
-  width:425px; 
+  width:415px; 
 }
 .nivo_slider_controlNavImages .nivo-controlNav a, 
 .nivo_slider_controlNavImages .nivo-controlNav img {
-  margin: 0 11px 0 0;
+  margin: 0 5px 0 0;
   padding: 0;
 }
 .nivo_slider_controlNavImages .nivo-controlNav img {
