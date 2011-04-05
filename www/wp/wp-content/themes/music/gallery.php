@@ -52,6 +52,9 @@
 	html { margin-top: 28px !important; }
 	* html body { margin-top: 28px !important; }
 </style>
+ <!--[if IE]>
+ <link rel="stylesheet" href="/ie.css" type="text/css" media="screen, projection" />
+<![endif]-->
 <link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
 					<script type="text/javascript" charset="utf-8">
 				var galleryLoaded=function(){
