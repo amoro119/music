@@ -47,6 +47,11 @@
 	 */
 	wp_head();
 ?>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+<style type="text/css">
+	html { margin-top: 28px !important; }
+	* html body { margin-top: 28px !important; }
+</style>
 <link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
 					<script type="text/javascript" charset="utf-8">
 				var galleryLoaded=function(){
