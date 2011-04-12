@@ -17,7 +17,7 @@
 	<body id="news">
 		<div class="wrapper">
 			<div class="bg3">
-				<a class="nav_news pa" href="/news.htm"></a> <a class="nav_events pa" href="/events.htm"></a> <a class="nav_artists pa" href="/artists.htm"></a> <a class="nav_music pa" href="/music.htm"></a> <a class="nav_education pa" href="/education.htm"></a> <a class="nav_gallery pa" href="/gallery.htm"></a> <a class="nav_credits pa" href="/credits.htm"></a> <a class="nav_contact pa" href="/contact.htm"></a> <a class="nav_eshop pa" href="/eshop.htm"></a> <a class="nav_flux pa" href="/flux.htm"></a> <a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/index.htm"></a> 
+				<a class="nav_news pa" href="/news.htm"></a> <a class="nav_events pa" href="/events.htm"></a> <a class="nav_artists pa" href="/artists.htm"></a> <a class="nav_music pa" href="/music.htm"></a> <a class="nav_education pa" href="/education.htm"></a> <a class="nav_gallery pa" href="/gallery.htm"></a> <a class="nav_credits pa" href="/credits.htm"><img src="/images/nav_credits_hover2.png" width="113" height="128" alt="Nav Credits Hover2"></a> <a class="nav_contact pa" href="/contact.htm"></a> <a class="nav_eshop pa" href="/eshop.htm"></a> <a class="nav_flux pa" href="/flux.htm"></a> <a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/index.htm"></a> 
 			</div>
 			<div class="content pa">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

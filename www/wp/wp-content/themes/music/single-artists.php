@@ -26,7 +26,7 @@
 		
 	</a>
 	<a class="nav_artists pa" href="/artists.htm">
-		
+		<img src="/images/nav_artists_hover2.png" width="138" height="98" alt="Nav Artists Hover2">
 	</a>
 	<a class="nav_music pa" href="/music.htm">
 		

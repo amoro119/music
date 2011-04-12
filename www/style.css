@@ -695,12 +695,12 @@ div.pagination {
 
 #gallery #content-left-arrow{
 	position:absolute;
-	left:0px;
+	left:15px;
 	top:311px;
 }
 #gallery #content-right-arrow{
 	position:absolute;
-	left:425px;
+	left:420px;
 	top:311px;
 }
 .gallery_bg{

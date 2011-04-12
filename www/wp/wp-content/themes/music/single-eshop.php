@@ -44,7 +44,7 @@
 		
 	</a>
 	<a class="nav_eshop pa" href="/eshop.htm">
-		
+		<img src="/images/nav_eshop_hover2.png" width="106" height="128" alt="Nav Eshop Hover2">
 	</a>
 	<a class="nav_flux pa" href="/flux.htm">
 		

@@ -44,7 +44,7 @@
 		
 	</a>
 	<a class="nav_events pa" href="/events.htm">
-		
+		<img src="/images/nav_events_hover2.png" width="114" height="103" alt="Nav Events Hover2">
 	</a>
 	<a class="nav_artists pa" href="/artists.htm">
 		

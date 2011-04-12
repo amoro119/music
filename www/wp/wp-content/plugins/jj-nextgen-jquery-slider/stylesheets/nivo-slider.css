@@ -170,9 +170,9 @@ a.nivo-prevNav {
   overflow: hidden;
   visibility: hidden;
   line-height: 1px;
-  left: -50px;
+  left: -15px;
   top:260px;
-  width:415px; 
+  width:355px; 
 }
 .nivo_slider_controlNavImages .nivo-controlNav a, 
 .nivo_slider_controlNavImages .nivo-controlNav img {
