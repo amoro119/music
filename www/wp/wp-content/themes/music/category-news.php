@@ -33,7 +33,16 @@
 	<body id="news">
 				<ul  class="articlelist">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		   <li><p><?php the_title(); ?></p><a class="readmore" href="<?php the_permalink() ?>" target="_top">Read more</a><div class="clear"></div></li>
+			<li>
+		   	<div class="fl">
+					<a href="<?php the_permalink() ?>" target="_top"><?php the_post_thumbnail('thumbnail');?></a>
+				</div>
+				<div class="fr">
+					<p><?php the_title(); ?></p>
+					<a class="readmore" href="<?php the_permalink() ?>" target="_top">Read more</a>
+				</div>
+				<div class="clear"></div>
+			</li>
 		   <?php endwhile; endif; ?>
 		</ul> 
 		<div class="pagination pa">

@@ -8,10 +8,13 @@
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
 <script src="/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/jquery.jscrollpane.min.js"></script>
 <meta name="author" content="xtunes.cc" />
 </head>
 	<body id="artists">
+		<div class="scroll-pane">
 				<ul  class="articlelist">
+					<?php $posts = query_posts($query_string . '&orderby=date&showposts=30'); ?>
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 									<li>
 				<div class="fl">
@@ -26,14 +29,12 @@
 				<div class="clear"></div>
 			</li>
 					   <?php endwhile; endif; ?>
-		</ul> 
-		<div class="pagination pa">
-			<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
-				<script type="text/javascript" charset="utf-8">
-				$(function(){
-					$('a.page:last').addClass('last');
-				})
-			</script>
+		</ul>
 		</div>
+			<script type="text/javascript" charset="utf-8">
+				$(function(){
+				 $('.scroll-pane').jScrollPane();
+				});
+			</script>
 	</body>
 </html>

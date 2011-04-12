@@ -152,7 +152,7 @@ a.nav_flux:hover{
 }
 ul.articlelist {
 	width:396px;
-	margin: 5px 0 0 23px;
+	margin: 0px 0 0 23px;
 	line-height:18px;
 }
 ul.articlelist li{
@@ -170,7 +170,7 @@ ul.articlelist li{
 }
 #news ul.articlelist li p{
 	min-height:48px;
-	padding-top:18px;
+	padding-top:5px;
 }
 .pagination{
 	right:10px;
@@ -189,6 +189,9 @@ ul.articlelist li img{
 #artists .fr{
 	width:300px;
 }
+#news .fr{
+	width:300px;
+}
 #events ul.articlelist{
 	margin-top:3px;
 }
@@ -198,7 +201,7 @@ ul.articlelist li{
 	padding-top:10px;
 }
 #news ul.articlelist li{
-	padding-top:0;	
+	padding-top:10px;	
 }
 #events ul.articlelist li{
 	line-height:14px;
@@ -644,6 +647,9 @@ div.pagination {
 {
 	margin: 0 -3px 0 0;
 }
+#artists{
+	padding-top:15px;
+}
 #artists .content,#artists .player{
 	top:286px;
 }
@@ -715,4 +721,7 @@ div.pagination {
 	background: url('images/thumbnails_bg.png') no-repeat 0 0;
 	width:71px;
 	height:67px;
+}
+.scroll-pane{
+	height:300px;
 }
