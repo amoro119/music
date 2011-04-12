@@ -105,7 +105,7 @@
 					$('.content a').each(function(){
 						var href=$(this).attr('href');
 						 if ( href.match(/.*\.(jpg|jpeg|png|gif)$/) ) {
-						   $('.main2').append($('img').attr('src',href));
+						   $('.main2').append($('<img/s>').attr('src',href));
 						   $(this).remove();
 						 }else if ( href.match(/.*\.(flv|mp4|ogg)$/) ) {
 						   //$('.player').append('<embed src="http://player.longtailvideo.com/player.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="392" height="280" flashvars="netstreambasepath=http%3A%2F%2Fwww.longtailvideo.com%2Fplayers%2Fjw-flv-player%2F&amp;image=http%3A%2F%2Fcontent.bitsontherun.com%2Fthumbs%2FuMp5r6eZ-480.jpg&amp;id=player1&amp;skin=http%3A%2F%2Fcontent.longtailvideo.com%2Fskins%2Fglow%2Fglow.zip&amp;stretching=fill&amp;controlbar.position=over"></embed>');
