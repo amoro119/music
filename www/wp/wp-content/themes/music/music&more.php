@@ -42,7 +42,6 @@
 									<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
-	<img src="/images/small_logo.jpg" width="63" height="51" alt="Small Logo">
 		</div>
 	</body>
 </html>

@@ -2,6 +2,27 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<title><?php
+	/*
+	 * Print the <title> tag based on what is being viewed.
+	 */
+	global $page, $paged;
+
+	wp_title( '|', true, 'right' );
+
+	// Add the blog name.
+	bloginfo( 'name' );
+
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " | $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyten' ), max( $paged, $page ) );
+
+	?></title>
 <script src="/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8" />
@@ -49,7 +70,11 @@
 	<a class="nav_flux pa" href="/flux.htm">
 		
 	</a>
-	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/index.htm"></a>
+	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/home.htm"></a>
+		<a style="width:51px;height:59px;display:block;left:872px;top:676px;" class="pa" href="http://www.facebook.com/pages/Luxemburg-Luxembourg/Music-More/183676258343372" target="_blank"></a>
+<a style="width:51px;height:59px;display:block;left:932px;top:676px;" class="pa" href="http://twitter.com/musicandmore_lu" target="_blank"></a>
+<a href="/home.htm" class="pa english"><img src="/images/engilsh.gif" width="55" height="67" alt="Engilsh"></a>
+<a href="#" class="pa french"><img src="/images/french.gif" width="55" height="67" alt="French"></a>
 	</div>
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<div class="info">

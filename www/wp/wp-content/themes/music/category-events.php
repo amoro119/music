@@ -38,7 +38,6 @@
 					<a href="<?php the_permalink() ?>" target="_top"><?php the_post_thumbnail('thumbnail');?></a>
 				</div>
 				<div class="fr">
-					<span>20/05/2011 20:00</span>
 					<h1><a href="<?php the_permalink() ?>" target="_top"><?php the_title(); ?></a></h1>
 					<p><?php the_excerpt(); ?> </p>
 				</div>
