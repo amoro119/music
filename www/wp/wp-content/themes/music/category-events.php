@@ -33,13 +33,20 @@
 	<body id="events">
 				<ul  class="articlelist">
 					<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		   <li>
+		   <li class="pr">
 		   	<div class="fl">
 					<a href="<?php the_permalink() ?>" target="_top"><?php the_post_thumbnail('thumbnail');?></a>
 				</div>
 				<div class="fr">
 					<h1><a href="<?php the_permalink() ?>" target="_top"><?php the_title(); ?></a></h1>
 					<p><?php the_excerpt(); ?> </p>
+				</div>
+								<div class="new pa">
+					<?php
+$t1=$post->post_date;
+$t2=date("Y-m-d H:i:s");
+$diff=(strtotime($t2)-strtotime($t1))/3600;
+if($diff<24){echo "<img src='/images/ico_new.png' alt='24小时内最新'>";}?>
 				</div>
 				<div class="clear"></div>
 			</li>

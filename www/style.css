@@ -730,3 +730,11 @@ div.pagination {
 	right:64px;
 	top:52px;
 }
+ul.articlelist li .new{
+	left:46px;
+	top:6px;
+}
+ul.articlelist li .new img{
+	border:0;
+	margin:0;
+}
