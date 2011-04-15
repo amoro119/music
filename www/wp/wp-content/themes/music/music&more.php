@@ -35,6 +35,7 @@
 <meta name="keywords" content="keywords" />
 <meta name="description" content="description" />
 <script src="/jquery-1.5.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="/jquery.jscrollpane.min.js"></script>
 <meta name="author" content="xtunes.cc" />
 </head>
 <body id="music">
@@ -43,5 +44,10 @@
 					<?php the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
 		</div>
+					<script type="text/javascript" charset="utf-8">
+				$(function(){
+				 $('.content').jScrollPane();
+				});
+			</script>
 	</body>
 </html>

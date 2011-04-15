@@ -413,9 +413,9 @@ background: url('images/nav_news_hover2.png') no-repeat 0 0;
 }
 
 #music .content{
-	margin:44px 0 0 56px;
-	width:auto;
-	height:auto;
+	margin:44px 0 0 46px;
+	width:320px;
+		height:258px;	
 }
 #music p{
 	color:#595757;
@@ -426,9 +426,6 @@ background: url('images/nav_news_hover2.png') no-repeat 0 0;
 #music p span{
 	color:#E9A51D;
 	font-size:14px;
-}
-#music .content img{
-	margin:34px 0 0 280px;
 }
 #contact .content{
 	margin:28px 0 0 61px;
