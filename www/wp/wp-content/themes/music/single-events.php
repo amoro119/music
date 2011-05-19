@@ -73,8 +73,6 @@
 	<a style="width:135px;height:100px;display:block;left:55px;top:50px;" class="pa" href="/home.htm"></a>
 	<a style="width:51px;height:59px;display:block;left:872px;top:676px;" class="pa" href="http://www.facebook.com/pages/Luxemburg-Luxembourg/Music-More/183676258343372" target="_blank"></a>
 <a style="width:51px;height:59px;display:block;left:932px;top:676px;" class="pa" href="http://twitter.com/musicandmore_lu" target="_blank"></a>
-<a href="/home.htm" class="pa english"><img src="/images/engilsh.gif" width="55" height="67" alt="Engilsh"></a>
-<a href="#" class="pa french"><img src="/images/french.gif" width="55" height="67" alt="French"></a>
 	</div>
 	<div class="content pa">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
